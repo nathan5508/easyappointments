@@ -95,10 +95,10 @@ class Providers_model extends EA_Model {
         }
 
         // Validate provider email address.
-        if ( ! filter_var($provider['email'], FILTER_VALIDATE_EMAIL))
-        {
-            throw new Exception('Invalid email address provided: ' . $provider['email']);
-        }
+        // if ( ! filter_var($provider['email'], FILTER_VALIDATE_EMAIL))
+        // {
+        //     throw new Exception('Invalid email address provided: ' . $provider['email']);
+        // }
 
         // Validate provider services.
         if ( ! isset($provider['services']) || ! is_array($provider['services']))
@@ -212,10 +212,10 @@ class Providers_model extends EA_Model {
      */
     public function exists($provider)
     {
-        if ( ! isset($provider['email']))
-        {
-            throw new Exception('Provider email is not provided:' . print_r($provider, TRUE));
-        }
+        // if ( ! isset($provider['email']))
+        // {
+        //     throw new Exception('Provider email is not provided:' . print_r($provider, TRUE));
+        // }
 
         // This method shouldn't depend on another method of this class.
         $num_rows = $this->db

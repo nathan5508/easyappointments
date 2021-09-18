@@ -277,10 +277,10 @@
             }
 
             // Validate user email.
-            if (!GeneralFunctions.validateEmail($('#admin-email').val())) {
-                $('#admin-email').closest('.form-group').addClass('has-error');
-                throw new Error(EALang.invalid_email);
-            }
+            // if (!GeneralFunctions.validateEmail($('#admin-email').val())) {
+            //     $('#admin-email').closest('.form-group').addClass('has-error');
+            //     throw new Error(EALang.invalid_email);
+            // }
 
             // Check if username exists
             if ($('#admin-username').attr('already-exists') === 'true') {

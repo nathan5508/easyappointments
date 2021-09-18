@@ -412,8 +412,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="email"><?= lang('email') ?> *</label>
-                            <input id="email" class="form-control required">
+                            
+                            <input id="email" class="form-control">
                         </div>
 
                         <div class="form-group">

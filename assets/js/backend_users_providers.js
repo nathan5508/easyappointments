@@ -315,10 +315,10 @@
             }
 
             // Validate user email.
-            if (!GeneralFunctions.validateEmail($('#provider-email').val())) {
-                $('#provider-email').closest('.form-group').addClass('has-error');
-                throw new Error(EALang.invalid_email);
-            }
+            // if (!GeneralFunctions.validateEmail($('#provider-email').val())) {
+            //     $('#provider-email').closest('.form-group').addClass('has-error');
+            //     throw new Error(EALang.invalid_email);
+            // }
 
             // Check if username exists
             if ($('#provider-username').attr('already-exists') === 'true') {

@@ -90,10 +90,10 @@ class Admins_model extends EA_Model {
         }
 
         // Validate admin email address.
-        if ( ! filter_var($admin['email'], FILTER_VALIDATE_EMAIL))
-        {
-            throw new Exception('Invalid email address provided: ' . $admin['email']);
-        }
+        // if ( ! filter_var($admin['email'], FILTER_VALIDATE_EMAIL))
+        // {
+        //     throw new Exception('Invalid email address provided: ' . $admin['email']);
+        // }
 
         // Check if username exists.
         if (isset($admin['settings']['username']))
@@ -182,10 +182,10 @@ class Admins_model extends EA_Model {
      */
     public function exists($admin)
     {
-        if ( ! isset($admin['email']))
-        {
-            throw new Exception('Admin email is not provided: ' . print_r($admin, TRUE));
-        }
+        // if ( ! isset($admin['email']))
+        // {
+        //     throw new Exception('Admin email is not provided: ' . print_r($admin, TRUE));
+        // }
 
         // This method shouldn't depend on another method of this class.
         $num_rows = $this->db

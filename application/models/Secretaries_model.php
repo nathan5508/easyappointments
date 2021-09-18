@@ -98,10 +98,10 @@ class Secretaries_model extends EA_Model {
         }
 
         // Validate secretary email address.
-        if ( ! filter_var($secretary['email'], FILTER_VALIDATE_EMAIL))
-        {
-            throw new Exception('Invalid email address provided: ' . $secretary['email']);
-        }
+        // if ( ! filter_var($secretary['email'], FILTER_VALIDATE_EMAIL))
+        // {
+        //     throw new Exception('Invalid email address provided: ' . $secretary['email']);
+        // }
 
         // Check if username exists.
         if (isset($secretary['settings']['username']))
@@ -190,10 +190,10 @@ class Secretaries_model extends EA_Model {
      */
     public function exists($secretary)
     {
-        if ( ! isset($secretary['email']))
-        {
-            throw new Exception('Secretary email is not provided: ' . print_r($secretary, TRUE));
-        }
+        // if ( ! isset($secretary['email']))
+        // {
+        //     throw new Exception('Secretary email is not provided: ' . print_r($secretary, TRUE));
+        // }
 
         // This method shouldn't depend on another method of this class.
         $num_rows = $this->db

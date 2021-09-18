@@ -100,10 +100,10 @@ class Customers_model extends EA_Model {
         }
 
         // Validate email address
-        if ( ! filter_var($customer['email'], FILTER_VALIDATE_EMAIL))
-        {
-            throw new Exception('Invalid email address provided: ' . $customer['email']);
-        }
+        // if ( ! filter_var($customer['email'], FILTER_VALIDATE_EMAIL))
+        // {
+        //     throw new Exception('Invalid email address provided: ' . $customer['email']);
+        // }
 
         // When inserting a record the email address must be unique.
         $customer_id = isset($customer['id']) ? $customer['id'] : '';
@@ -142,10 +142,10 @@ class Customers_model extends EA_Model {
      */
     public function exists($customer)
     {
-        if (empty($customer['email']))
-        {
-            throw new Exception('Customer\'s email is not provided.');
-        }
+        // if (empty($customer['email']))
+        // {
+        //     throw new Exception('Customer\'s email is not provided.');
+        // }
 
         // This method shouldn't depend on another method of this class.
         $num_rows = $this->db

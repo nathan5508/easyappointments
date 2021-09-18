@@ -236,10 +236,10 @@
             }
 
             // Validate email address.
-            if (!GeneralFunctions.validateEmail($('#email').val())) {
-                $('#email').closest('.form-group').addClass('has-error');
-                throw new Error(EALang.invalid_email);
-            }
+            // if (!GeneralFunctions.validateEmail($('#email').val())) {
+            //     $('#email').closest('.form-group').addClass('has-error');
+            //     throw new Error(EALang.invalid_email);
+            // }
 
             return true;
         } catch (error) {

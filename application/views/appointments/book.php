@@ -266,7 +266,7 @@
                                     <?= lang('email') ?>
                                     <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="email" class="required form-control" maxlength="120"/>
+                                <input type="text" id="email" class="form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
                                 <label for="phone-number" class="control-label">
